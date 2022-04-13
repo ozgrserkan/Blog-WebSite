@@ -1,12 +1,17 @@
 import React from "react";
 import Header from "../../header/Header";
+import Sidebar from "../../sidebar/Sidebar";
+import Posts from "../../post/Posts";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Header />
-      homepage
-    </div>
+      <div className="home">
+        <Posts />
+        <Sidebar />
+      </div>
+    </>
   );
 };
 
